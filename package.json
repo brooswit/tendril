@@ -1,0 +1,24 @@
+{
+  "name": "tendril",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brooswit/tendril.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brooswit/tendril/issues"
+  },
+  "homepage": "https://github.com/brooswit/tendril#readme",
+  "dependencies": {
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0",
+    "terminal-kit": "^2.1.6"
+  }
+}
