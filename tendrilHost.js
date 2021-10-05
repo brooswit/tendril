@@ -44,7 +44,7 @@ module.exports = class TendrilHost {
             });
         });
 
-        this.server.listen(3000);
+        this.server.listen(process.env.PORT || 3000);
         // console.log("listening...")
     }
 };
