@@ -5,7 +5,7 @@ module.exports = class TendrilClient {
         this.ready = new Promise((resolve, reject) => {
             // console.log('initializing tendril client...');
             this.operations = operations;
-            this.socket = socketIOClient.connect(`ws://${hostDomain}:3000`);
+            this.socket = socketIOClient.connect(`ws://${hostDomain}`);
             // console.log('connecting...');
             this.socket.on("connect", async () => {
                 // console.log('...connected!');
