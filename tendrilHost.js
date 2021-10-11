@@ -28,7 +28,7 @@ module.exports = class TendrilHost {
                 if (!this.usernames[username]) {
                     handleResponse(undefined);
                 } else {
-                    socket.once(`execute:${responseId}`, handleResponse);
+                    this.usernames[username].socket.once(`execute:${responseId}`, handleResponse);
                     this.usernames[username].socket.emit('execute', {responseId, operationName, options}, (_, cb)=>{cb();});
                 }
             });
